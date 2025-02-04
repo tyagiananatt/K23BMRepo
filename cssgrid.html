@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRIDS</title>
+<style>
+    .container{
+        background-color: pink;
+        border: 5px red solid;
+        padding: 20px;
+        display: grid;
+        /* gap: 20px; */
+        /* grid-template-columns: auto auto 50%;
+        grid-template-rows: 150px 200px; */
+        grid-template: 100px 200px/ 30% auto auto;
+        /* grid-row-gap: 20px;
+        grid-column-gap: 20px; */
+        grid-gap: 20px 30px;
+
+    }
+    /* grid tempalte colums
+    grid template rows
+    grid template 
+    grid row start
+    grid row end
+    grid row gap
+    grid row
+    */
+.item{
+    border: 2px maroon solid;
+    padding: 10px;
+   
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: skyblue;
+    
+}
+
+#i3{
+    /* grid-row-start: 2;
+    grid-row-end:span 2; */
+    grid-row: 2/span 3;
+    background-color: aquamarine;
+}
+
+
+#i7{
+    /* grid-row-start: 2;
+    grid-row-end:span 2; */
+    /* grid-column-start: 3;
+    grid-column-end: span 2; */
+    grid-column: 4/6;
+    background-color: aquamarine;
+}
+
+#i9{
+    grid-area: 2/3/span 2/span 2;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">ITEM1</div>
+        <div class="item">ITEM2</div>
+        <div class="item" id="i3">ITEM3</div>
+        <div class="item">ITEM4</div>
+        <div class="item">ITEM5</div>
+        <div class="item">ITEM6</div>
+        <div class="item" id="i7">ITEM7</div>
+        <div class="item">ITEM8</div>
+        <div class="item" id="i9">ITEM9</div>
+        
+
+
+    </div>
+</body>
+</html>

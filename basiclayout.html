@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{
+        background-color: red;
+        border: 5px maroon solid;
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+.item{
+    background-color: chartreuse;
+    text-align: center;
+}
+
+    #head{
+    background-color: yellow;
+    text-align: center;
+    
+    /* grid-column-start: 1;
+    grid-row-start: 1; */
+    grid-column: 1/span 3;
+    height: 80px;
+    
+
+}
+
+#image1{
+    grid-row: 2/span 2;
+    grid-column: 1/span 3;
+
+    /* grid-row-end: 2; */
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+}
+#image2{
+    grid-row: 4/span 2;
+    height: 100px;
+    
+
+}
+#image3{
+    grid-row: 4/span 2;
+    /* grid-row-start: 3; */
+}
+#image4{
+    /* grid-row-start: 3; */
+    grid-row: 4/span 2;
+}
+#image5{
+    grid-row: 7/span 2;
+    grid-column: 1/span 2;
+    height: 100px;
+}
+#para{
+    grid-row: 7/span 2;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="head">FAMOUS DISHES OF INDIA</div>
+        <div class="item" id="image1">
+            <figure>
+                
+                <img src="https://th.bing.com/th/id/OIP.2-ep7GVydS_MfuqoEtTAaQAAAA?rs=1&pid=ImgDetMain" height="300px"  width="800px">
+                <figcaption>DOSA IS A SOUTH INDIAN DISH </figcaption>
+            </figure>
+        </div>
+        <div class="item" id="image2">
+            <figure>
+                <img src="https://s3.scoopwhoop.com/son/thali/gujju.jpg" height="80px" width="200px">
+            </figure>
+
+
+
+        </div>
+        <div class="item" id="image3">
+            <figure>
+                <img src="https://cdn.tasteatlas.com/images/toplistarticles/d0e6a0a79d5f4197a51f4ca065393ffe.jpg" height="80px" width="200px">
+            </figure>
+        </div>
+        <div class="item" id="image4">
+            <figure>
+                <img src="https://s3.scoopwhoop.com/anj2/5dce4c3250758d2f6fb3e6c9/4c000d72-16f0-451f-b392-3661772cb93d.jpg" height="100px" width="100px">
+
+
+
+            </figure>
+        </div>
+        <div class="item" id="image5">
+            <figure>
+                <img src="https://www.chefspencil.com/wp-content/uploads/Dahi-Puri.jpg" height="100px" width="100px">
+            </figure>
+
+
+        </div>
+        <div class="item" id="para">paragraph </div>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
